@@ -61,9 +61,9 @@ public abstract class AbstractStore {
 	 * Sort entire Store inventory
 	 * @param c 	Comparator specifying sort criteria
 	 */
-	public abstract void sellInventory(Comparator<AbstractItemAPI> c);
+	public abstract void sortInventory(Comparator<AbstractItemAPI> c);
 	
-	public void showInnventory() {
-		System.out.println(toString()); 
-	}
+	public abstract void showInnventory(); 
+	
+	
 }
