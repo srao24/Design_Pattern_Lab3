@@ -110,7 +110,40 @@ public class Amazon extends AbstractStore {
 		
 		
 		//print the store items
-	abStore.showInnventory();
+		abStore.showInnventory();
+		
+	
+		//Get the iphone instance
+		AbstractItemFactory iphoneFac = IphoneFactorySingleton.getObject();
+		AbstractItemAPI iphone1 =  iphoneFac.getObject();
+		AbstractItemAPI iphone2 =  iphoneFac.getObject();
+		
+		
+		iphone1.setId(1);
+		iphone1.setName("iphone 12 pro");
+		iphone1.setPrice(1002.99);
+		iphone1.setDescription("Latest iphone");
+		
+		iphone2.setId(2);
+		iphone2.setName("iphone 11 pro");
+		iphone2.setPrice(899.99);
+		iphone2.setDescription("Previous iphone");
+		
+		//add the iphone to store
+		abStore.addItem(iphone1);
+		abStore.addItem(iphone2);
+		
+		
+		//print the store items
+		abStore.showInnventory();
+		
+		
+		//sell item
+		abStore.sellItem(iphone2);
+		
+		
+		//print the store items
+		abStore.showInnventory();
 	
 		
 		System.out.println(Amazon.class.getName() + " demo() done...");

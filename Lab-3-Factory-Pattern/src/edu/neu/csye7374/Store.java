@@ -53,7 +53,13 @@ public class Store extends AbstractStore {
 	}
 
 	@Override
-	public void sellInventory(Comparator<AbstractItemAPI> c) {
+	public void sortInventory(Comparator<AbstractItemAPI> c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void showInnventory() {
 		// TODO Auto-generated method stub
 		
 	}
