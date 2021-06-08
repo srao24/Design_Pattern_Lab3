@@ -21,7 +21,7 @@ public class Item extends AbstractItemAPI {
 	 * Executed by each constructor
 	 */
 	{
-		this.id =1;
+		this.id = 1;
 		this.price = 0.99;
 		this.name = "item";
 		this.description = "Consumer Item";
@@ -39,7 +39,7 @@ public class Item extends AbstractItemAPI {
 	@Override
 	public double getPrice() {
 		// TODO Auto-generated method stub
-		return 0;
+		return price;
 	}
 	@Override
 	public void setPrice(double price) {
@@ -49,7 +49,7 @@ public class Item extends AbstractItemAPI {
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
-		return null;
+		return name;
 	}
 	@Override
 	public void setName(String name) {
@@ -59,7 +59,7 @@ public class Item extends AbstractItemAPI {
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return null;
+		return description;
 	}
 	@Override
 	public void setDescription(String description) {
